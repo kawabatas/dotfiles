@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# symbolic link
 DIR=$(cd $(dirname $0); pwd)
 files=(.gitignore_global .bash_profile .bashrc)
 for file in ${files[@]};do
