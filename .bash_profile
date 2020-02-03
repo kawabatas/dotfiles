@@ -6,6 +6,18 @@ export PATH=$PATH:$GOPATH/bin
 stty stop undef
 stty start undef
 
+# for ruby project
+export BUNDLE_JOBS=4
+export CONFIGURE_OPTS='--disable-install-rdoc'
+# brew --prefix openssl
+openssl_path=/usr/local/opt/openssl
+# brew --prefix readline
+readline_path=/usr/local/opt/readline
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$openssl_path --with-readline-dir=$readline_path --disable-dtrace"
+export RUBY_MAKE_OPTS='-j 2'
+# mysql-client
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
