@@ -10,6 +10,7 @@ alias cdr='cd $(ghq root)/$(ghq list | peco)'
 alias hbr='hub browse'
 alias hbro='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
 alias dc='docker-compose'
+alias relogin='exec $SHELL -l'
 
 # Show git branch
 source /usr/local/etc/bash_completion.d/git-prompt.sh

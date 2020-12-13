@@ -2,6 +2,10 @@ export HISTSIZE=5000
 export HISTFILESIZE=5000
 export GOPATH="$HOME/dev"
 export PATH=$PATH:$GOPATH/bin
+# export PATH=$HOME/sdk/go1.12.14/bin:$PATH
+export PATH=$HOME/sdk/go1.13.8/bin:$PATH
+# export PATH=$HOME/sdk/go1.14.10/bin:$PATH
+# export PATH=$HOME/sdk/go1.15.3/bin:$PATH
 
 stty stop undef
 stty start undef
