@@ -11,6 +11,7 @@ alias hbr='hub browse'
 alias hbro='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
 alias dc='docker-compose'
 alias relogin='exec $SHELL -l'
+alias drmi='docker rmi $(docker images -f dangling=true -q)'
 
 # Show git branch
 source /usr/local/etc/bash_completion.d/git-prompt.sh
