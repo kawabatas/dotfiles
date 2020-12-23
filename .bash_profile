@@ -1,14 +1,14 @@
 export HISTSIZE=5000
 export HISTFILESIZE=5000
-export GOPATH="$HOME/dev"
-export PATH=$PATH:$GOPATH/bin
-# export PATH=$HOME/sdk/go1.12.14/bin:$PATH
-export PATH=$HOME/sdk/go1.13.8/bin:$PATH
-# export PATH=$HOME/sdk/go1.14.10/bin:$PATH
-# export PATH=$HOME/sdk/go1.15.3/bin:$PATH
+export GIT_PR_RELEASE_TOKEN=
 
 stty stop undef
 stty start undef
+
+# for golang project
+export GOPATH="$HOME/dev"
+export PATH=$PATH:$GOPATH/bin
+export PATH=$HOME/sdk/go1.15.3/bin:$PATH
 
 # for ruby project
 export BUNDLE_JOBS=4
