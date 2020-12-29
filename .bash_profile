@@ -10,6 +10,9 @@ export GOPATH="$HOME/dev"
 export PATH=$PATH:$GOPATH/bin
 export PATH=$HOME/sdk/go1.15.3/bin:$PATH
 
+# for rust project
+source "$HOME/.cargo/env"
+
 # for ruby project
 export BUNDLE_JOBS=4
 export CONFIGURE_OPTS='--disable-install-rdoc'
