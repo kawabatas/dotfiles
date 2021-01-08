@@ -13,6 +13,7 @@ alias relogin='exec $SHELL -l'
 alias dc='docker-compose'
 alias drm='docker rm $(docker ps -a -q)'
 alias drmi='docker rmi $(docker images -f dangling=true -q)'
+alias tf='terraform'
 
 # Show git branch
 source /usr/local/etc/bash_completion.d/git-prompt.sh
