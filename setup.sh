@@ -27,7 +27,7 @@ fi
 echo "Updating Homebrew..."
 brew update && brew upgrade
 
-brews=(git jq readline openssl direnv tree ghq hub peco anyenv go)
+brews=(git jq readline openssl direnv tree gh ghq peco anyenv go)
 
 for brew in ${brews[@]}; do
   echo "brew install $brew ..."
