@@ -6,4 +6,5 @@ node_modules
 .idea
 .vscode
 .envrc
+.env
 MY_README.md
